@@ -1,19 +1,19 @@
 /* anime watch */
-body{
+.dy{
     background-image: linear-gradient(white,grey,white); 
 }
 .grid{
     display: grid;
     gap: 80px;
     grid-template-areas: 
-    'header header header header'
-    'nav nav nav nav'
-    'article article article aside'
-    'section section section section'
-    'footer footer footer footer';
+    'der der der der'
+    'git git git git'
+    'ic ic ic ide'
+    'ti ti ti ti'
+    'ter ter ter ter';
 }
-header{
-    grid-area: header;
+.der{
+    grid-area: der;
     display: flex;
     justify-content: center;
     box-shadow: 20px -3px 20px 13px;
@@ -22,8 +22,8 @@ header{
     position: fixed;
     width: 98vw;
 }
-nav{
-    grid-area: nav;
+.git{
+    grid-area: git;
 }
 .menu{
     display: flex;
@@ -65,18 +65,18 @@ a{
 a:hover{
     color: black;
 }
-article{
-    grid-area: article;
+.ic{
+    grid-area: ic;
 }
 .box-1,.box-2,.box-3,.box-4,.box-5{
     color: black;
     box-shadow: 20px -10px 20px 0px;
 }
-aside{
-    grid-area: aside;
+.ide{
+    grid-area: ide;
 }
-section{
-    grid-area: section;
+.ti{
+    grid-area: ti;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -140,22 +140,23 @@ img:hover{
 h3{
     text-align:left;
 }
-footer{
-    grid-area: footer;
+.ter{
+    grid-area: ter;
     display: flex;
     justify-content: center;
     box-shadow: 20px -10px 20px 0px;
 }
 /* Gallery */
 .bo{
-    background-image: linear-gradient(to bottom,rgb(0, 0, 0),white,gray);
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0),white,gray,rgba(169, 169, 169, 0));
 }
 .grid2{
     display: grid;
-    gap: 20px;
+    gap: 40px;
     grid-template-areas: 
     'hea hea hea hea'
     'navi navi navi navi'
+    'art art art as'
     'sec sec sec sec'
     'foo foo foo foo';
 }
@@ -163,21 +164,51 @@ footer{
     grid-area: hea;
     display: flex;
     justify-content: center;
-    box-shadow: 20px -3px 20px 13px;
+    box-shadow: 20px -3px 20px 13px white;
     background-image: linear-gradient(white,gray);
     font-style:italic;
-    
-    
-  
 }
 .navi{
     grid-area: navi;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navi a{
+    box-shadow: 20px -10px 20px 0px white;
+    font-weight: bolder;
+}
+.art{
+    grid-area: art;
+    box-shadow: 20px -10px 20px 0px white;
+}
+.as{
+    grid-area: as;
+    box-shadow: 20px -10px 20px 0px white;
 }
 .sec{
     grid-area: sec;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+.vid{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+iframe{
+    display: flex;
+    height: 30vh;
+}
+.hl{
+     text-align: center;
 }
 .foo{
     grid-area: foo;
+    display: flex;
+    justify-content: center;
 }
-
- 
