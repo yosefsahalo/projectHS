@@ -1,6 +1,5 @@
 body{
     background-image: linear-gradient(white,grey,white);
-    /* margin: auto; */
 }
 .grid{
     display: grid;
@@ -45,7 +44,7 @@ li.top{
     font-style: italic;
 }
 li.top:hover{
-    background: gray;
+    background: grey;
     color: white;
 }
 li.under:hover{
@@ -86,7 +85,44 @@ section{
 }
 .pic{
     width: 30vw;
-    height: 35%;
+    height: 35%;}
+#op:hover,#bl:hover,#ns:hover,#db:hover,#hxh:hover,#aot:hover{    
+    transition: backgtound-imge 5s linear;
+}    
+#op{
+    background-image: url(images/Donkey\ D\ Luffy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bl{
+    background-image: url(images/Ichigo_Kurosaki.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ns{
+    background-image: url(images/Naruto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#db{
+    background-image: url(images/Goko.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#hxh{
+    background-image: url(images/Gon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#aot{
+    background-image: url(images/Eren.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 img{
     width: 100%;
@@ -94,11 +130,11 @@ img{
     border-radius: 10px;
 }
 img:hover{
-    animation: aw 5s linear 0s infinite normal forwards;
+    animation: aw 2s linear 0s 1 normal forwards;
 }
 @keyframes aw{
     0%{transform: rotateY(0deg);}
-    100%{transform: rotateY(360deg);}
+    100%{transform: rotateY(90deg);}
 }
 h3{
     text-align:left;
