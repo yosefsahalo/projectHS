@@ -1,5 +1,6 @@
+/* anime watch */
 body{
-    background-image: linear-gradient(white,grey,white);
+    background-image: linear-gradient(white,grey,white); 
 }
 .grid{
     display: grid;
@@ -145,3 +146,38 @@ footer{
     justify-content: center;
     box-shadow: 20px -10px 20px 0px;
 }
+/* Gallery */
+.bo{
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0),white,gray);
+}
+.grid2{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'hea hea hea hea'
+    'navi navi navi navi'
+    'sec sec sec sec'
+    'foo foo foo foo';
+}
+.hea{
+    grid-area: hea;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px -3px 20px 13px;
+    background-image: linear-gradient(white,gray);
+    font-style:italic;
+    
+    
+  
+}
+.navi{
+    grid-area: navi;
+}
+.sec{
+    grid-area: sec;
+}
+.foo{
+    grid-area: foo;
+}
+
+ 
