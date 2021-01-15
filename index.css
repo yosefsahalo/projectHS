@@ -33,7 +33,7 @@
     position: fixed;
     width: 98vw;
 }
-ul{
+.menu ul{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -57,23 +57,23 @@ ul:hover li.under{
 li.under{
     display: none;
 }
-a{
+.menu a{
     text-decoration: none;
     color: black;
     line-height: 75px;
 }
-a:hover{
+.menu a:hover{
     color: black;
 }
 .ic{
     grid-area: ic;
 }
+.ide{
+    grid-area: ide;
+}
 .box-1,.box-2,.box-3,.box-4,.box-5{
     color: black;
     box-shadow: 20px -10px 20px 0px;
-}
-.ide{
-    grid-area: ide;
 }
 .ti{
     grid-area: ti;
@@ -86,50 +86,7 @@ a:hover{
 }
 .pic{
     width: 30vw;
-    height: 35%;}
-#op:hover,#bl:hover,#ns:hover,#db:hover,#hxh:hover,#aot:hover{    
-    transition: backgtound-imge 5s linear;
-}    
-#op{
-    background-image: url(images/Donkey\ D\ Luffy.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-#bl{
-    background-image: url(images/Ichigo_Kurosaki.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-}
-#ns{
-    background-image: url(images/Naruto.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-#db{
-    background-image: url(images/Goko.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-#hxh{
-    background-image: url(images/Gon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-#aot{
-    background-image: url(images/Eren.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    height: 35%;
 }
 .ti img{
     width: 100%;
@@ -143,8 +100,70 @@ a:hover{
     0%{transform: rotateY(0deg);}
     100%{transform: rotateY(90deg);}
 }
-h3{
+.ti h3{
     text-align:left;
+}
+#op:hover,#bl:hover,#ns:hover,#db:hover,#hxh:hover,#aot:hover{    
+    transition: backgtound-imge 5s linear;
+}
+#op{
+    filter: blur(2px);
+}    
+#op{
+    background-image: url(images/Donkey\ D\ Luffy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#bl{
+    filter: brightness(170%);
+}
+#bl{
+    background-image: url(images/Ichigo_Kurosaki.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#ns{
+    filter: contrast(170%);
+}
+#ns{
+    background-image: url(images/Naruto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#db{
+    filter: grayscale(90%);
+}
+#db{
+    background-image: url(images/Goko.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#hxh{
+    filter: hue-rotate(90deg);
+}
+#hxh{
+    background-image: url(images/Gon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+#aot{
+    filter: opacity(0.6);
+}
+#aot{
+    background-image: url(images/Eren.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
 }
 .ter{
     grid-area: ter;
@@ -181,6 +200,9 @@ h3{
     
 }
 .navi a{
+    text-decoration: none;
+    color: black;
+    line-height: 75px;
     box-shadow: 20px -10px 20px 0px white;
     font-weight: bolder;
 }
@@ -252,6 +274,9 @@ iframe{
     justify-content: space-between;
 }
 .ion a{
+    text-decoration: none;
+    color: black;
+    line-height: 75px;
     box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
 }
 .ion a:hover{
@@ -271,6 +296,27 @@ iframe{
     grid-area: on;
     display: flex;
     flex-wrap:wrap ;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
+}
+.mang{
+    width: 30vw;
+    height: 40%;
+}
+.mang img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
+    transition: 5s linear;
+}
+.mang img:hover{
+    transform: rotateY(180deg);
+}
+.mang a{
+    text-decoration: none;
+    color: white;
 }
 .down{
     grid-area: down;
