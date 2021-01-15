@@ -45,6 +45,7 @@ li.top{
     font-style: italic;
 }
 li.top:hover{
+    border-radius: 10px;
     background: grey;
     color: white;
 }
@@ -170,6 +171,20 @@ li.under{
     display: flex;
     justify-content: center;
     box-shadow: 20px -10px 20px 0px;
+}
+@media (max-width:700px)
+{
+    .grid{
+        display: grid;
+        gap: 80px;
+        grid-template-areas: 
+        'der '
+        'git'
+        'ic'
+        'ide'
+        'ti'
+        'ter';   
+}
 }
 /* Gallery */
 .bo{
@@ -308,6 +323,7 @@ iframe{
 .mang img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
     transition: 5s linear;
 }
@@ -320,4 +336,5 @@ iframe{
 }
 .down{
     grid-area: down;
+    box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
 }
