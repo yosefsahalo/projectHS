@@ -338,3 +338,9 @@ iframe{
     grid-area: down;
     box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
 }
+.down button:hover{
+    border-radius: 5px;
+    box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
+    font-weight: bolder;
+    font-size: large;
+}
