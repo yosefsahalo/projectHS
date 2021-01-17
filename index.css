@@ -4,7 +4,7 @@
 }
 .grid{
     display: grid;
-    gap: 80px;
+    gap: 5%;
     grid-template-areas: 
     'der der der der'
     'git git git git'
@@ -172,11 +172,11 @@ li.under{
     justify-content: center;
     box-shadow: 20px -10px 20px 0px;
 }
-@media (max-width:700px)
+@media (max-width:730px)
 {
     .grid{
         display: grid;
-        gap: 80px;
+        gap: 140px;
         grid-template-areas: 
         'der '
         'git'
@@ -184,7 +184,18 @@ li.under{
         'ide'
         'ti'
         'ter';   
-}
+    }
+    .ti{
+        display: flex;
+        flex-flow: column;
+    }
+    .ti .pic{
+        width: 100vw;
+        height:10%;
+    }
+    .git{
+        display: none;
+    }
 }
 /* Gallery */
 .bo{
@@ -259,10 +270,33 @@ iframe{
     display: flex;
     justify-content: center;
 }
+@media (max-width:730px)
+{
+    .grid2{
+        display: grid;
+        gap: 40px;
+        grid-template-areas: 
+        'hea'
+        'navi'
+        'art'
+        'as'
+        'sec'
+        'foo';
+    }
+    .sec{
+        display: flex;
+        flex-flow: column;
+    }
+    .sec .vid{
+        width: 100vw;
+        height:25%;
+    }
+}
 /* Manga */
 .bot{
     background-image: linear-gradient(grey,white,black,gray);
     font-family: 'Pirata One';
+    width: 96vw;
 }
 .grid3{
     display: grid;
@@ -343,4 +377,26 @@ iframe{
     box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
     font-weight: bolder;
     font-size: large;
+}
+@media (max-width:730px)
+{
+    .grid3{
+        display: grid;
+        gap: 95px;
+        grid-template-areas: 
+        'head'
+        'ion'
+        'le'
+        'out'
+        'on'
+        'down';   
+    }
+    .on{
+        display: flex;
+        flex-flow: column;
+    }
+    .on .mang{
+        width: 100vw;
+        height:10%;
+    }
 }
