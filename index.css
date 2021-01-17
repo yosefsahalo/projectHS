@@ -196,6 +196,10 @@ li.under{
     .git{
         display: none;
     }
+    #op:hover,#bl:hover,#ns:hover,#db:hover,#hxh:hover,#aot:hover{
+        width: 100vw;
+        height: 10%;
+    }
 }
 /* Gallery */
 .bo{
