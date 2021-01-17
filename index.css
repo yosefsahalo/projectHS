@@ -178,12 +178,12 @@ li.under{
         display: grid;
         gap: 140px;
         grid-template-areas: 
-        'der '
+        'der'
         'git'
         'ic'
         'ide'
         'ti'
-        'ter';   
+        'ter';
     }
     .ti{
         display: flex;
@@ -193,7 +193,7 @@ li.under{
         width: 100vw;
         height:10%;
     }
-    .git{
+    .git .menu{
         display: none;
     }
     #op,#bl,#ns,#db,#hxh,#aot{
