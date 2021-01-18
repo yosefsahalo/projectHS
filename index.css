@@ -381,9 +381,11 @@ iframe{
 }
 .down .end{
     height: 200px;
+    width: 220px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    box-shadow: 20px 13px 20px 20px rgb(221, 211, 211);
 }
 .down button:hover{
     border-radius: 5px;
