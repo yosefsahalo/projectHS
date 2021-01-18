@@ -184,6 +184,7 @@ li.under{
         'ide'
         'ti'
         'ter';
+        grid-template-rows: 0% 6% 17% 9% 60% 1%;
     }
     .ti{
         display: flex;
@@ -194,7 +195,9 @@ li.under{
         height:10%;
     }
     .git .menu{
-        display: none;
+        display: flex;
+        flex-flow: column-reverse;
+        position: static;
     }
     #op,#bl,#ns,#db,#hxh,#aot{
         width:fit-content;
