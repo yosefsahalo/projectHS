@@ -393,6 +393,12 @@ iframe{
     font-weight: bolder;
     font-size: large;
 }
+input[type="text"]{
+    background: green;
+}
+input[type="email"]{
+    background: yellow;
+}
 @media (max-width:730px)
 {
     .grid3{
